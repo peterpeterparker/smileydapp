@@ -8,7 +8,7 @@
     "prebuild": "npm run generate",
     "start": "webpack serve --mode development --env development",
     "prestart": "npm run generate",
-    "generate": "dfx generate smileydapp_backend"
+    "generate": "dfx generate smileydapp_frontend && cp .dfx/local/canisters/smileydapp_frontend/smileydapp_frontend.wasm ."
   },
   "devDependencies": {
     "@dfinity/agent": "0.15.1",
