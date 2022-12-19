@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "smileydapp_backend": {
+      "main": "src/smileydapp_backend/main.mo",
+      "type": "motoko"
+    },
+    "smileydapp_frontend": {
+      "dependencies": [
+        "smileydapp_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/smileydapp_frontend/src/index.html"
+      },
+      "source": [
+        "src/smileydapp_frontend/assets",
+        "dist/smileydapp_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
